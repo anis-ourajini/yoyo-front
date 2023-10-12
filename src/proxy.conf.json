@@ -1,0 +1,7 @@
+{
+  "/OpenAi/*": {
+    "target": "https://9274-77-193-71-182.ngrok-free.app",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
