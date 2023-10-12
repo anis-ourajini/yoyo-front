@@ -12,6 +12,6 @@ export class HttpService {
     const httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     }
-      return this.http.post<any>(`https://66a7-77-193-71-182.ngrok-free.app/OpenAi/OpenAi/PMUTest`,{message}, httpOptions);
+      return this.http.post<any>(`https://localhost:7169//OpenAi/PMUTest`,{message}, httpOptions);
   }
 }
