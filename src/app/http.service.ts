@@ -12,6 +12,6 @@ export class HttpService {
     const httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     }
-      return this.http.post<any>(`https://localhost:7169//OpenAi/PMUTest`,{message}, httpOptions);
+      return this.http.post<string>(`http://localhost:5219/OpenAi/message`,'"'+message+'"', httpOptions);
   }
 }

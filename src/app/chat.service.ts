@@ -15,9 +15,8 @@ export class ChatService {
       console.log(question)
       this.httpService.requestMsg(question).subscribe(
         {
-          next: data => this.responses.next(data),
-          error: error => this.responses.next('error'),
-          complete: () => this.responses.next("Complete")
+          next: (data: any) => this.responses.next(data.text),
+          error: error => this.responses.next('error')
         }
       );
      //   const length = question?.length;
